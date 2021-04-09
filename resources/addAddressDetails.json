@@ -1,0 +1,39 @@
+{
+  "Permanent_Address": {
+    "House_Number": "79",
+    "City": "Hyderabad",
+    "State": "sample string 3",
+    "Country": "sample string 4",
+    "PhoneNumber": [
+      {
+        "Std_Code": "sample string 1",
+        "Home": "sample string 2",
+        "Mobile": "sample string 3"
+      },
+      {
+        "Std_Code": "sample string 1",
+        "Home": "sample string 2",
+        "Mobile": "sample string 3"
+      }
+    ]
+  },
+  "Current_Address": {
+    "House_Number": "sample string 1",
+    "City": "sample string 2",
+    "State": "Telangana",
+    "Country": "sample string 4",
+    "PhoneNumber": [
+      {
+        "Std_Code": "sample string 1",
+        "Home": "sample string 2",
+        "Mobile": "sample string 3"
+      },
+      {
+        "Std_Code": "sample string 1",
+        "Home": "sample string 2",
+        "Mobile": "sample string 3"
+      }
+    ]
+  },
+  "stId": "sample string 1"
+}
