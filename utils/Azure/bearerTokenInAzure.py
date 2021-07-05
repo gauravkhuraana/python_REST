@@ -33,8 +33,6 @@ def getAccessToken(self):
      assert tokenResponse.ok
      return access_token
 
-<<<<<<< HEAD
-=======
 def generateHeaders(self,access_token):
      global request_headers
      request_headers = {
@@ -42,4 +40,3 @@ def generateHeaders(self,access_token):
         'Authorization':f'Bearer {access_token}'
         }
      return request_headers
->>>>>>> 7June
