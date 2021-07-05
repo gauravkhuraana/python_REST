@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest-reportportal = "*"
+requests = "*"
+pytest = "*"
+assertpy = "*"
+lxml = "*"
+jsonpath-ng = "*"
+cerberus = "*"
+reportportal-client = "*"
+jsonpath = "*"
+pandas = "*"
+numpy = "*"
+Jinja2 = "*"
+openpyxl = "*"
+pytest-xdist = {extras = ["psutil"], version = "*"}
+selenium= "*"
+webdriver-manager = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

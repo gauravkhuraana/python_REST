@@ -12,7 +12,7 @@ def test_xmlParsin():
    responseXml=response.text
    print ("ResponseXML is \n",responseXml)
 
-    xmlTree = etree.fromstring(bytes(responseXml, encoding='utf8'))
+   xmlTree = etree.fromstring(bytes(responseXml, encoding='utf8'))
 
    totalCases = xmlTree.xpath("//data/summary/total_cases")[0].text
    assert_that(int(totalCases)).is_greater_than(1000000)

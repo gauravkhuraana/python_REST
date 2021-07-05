@@ -26,7 +26,11 @@ def create_new_person():
         'Content-Type' : 'application/json',
         'Accept' : 'application/json'
     }
+    print("URL is " , BASE_URI )
+    print("payload is ",payload)
+    print("headers are", headers)
 
+    exit(0)
     response = requests.post(url=BASE_URI , data= payload, headers=headers)
     print ("\n Response is \n ", response.content)
     print ("\n Response code is is \n ", response.status_code)

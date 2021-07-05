@@ -15,11 +15,15 @@ def test_GetAPI():
  response = requests.get(url)
 
  #Assert
- print (" \n status_code")
+ print(" \n status_code == >")
  print (response.status_code)
  
- print (" \n content")
- print (response.content)
+ print(" \n Json Response of API printed in a pretty way == > ")
+ json_object = json.loads(response.content)
+ json_fomatted_str = json.dumps(json_object,indent=2)
+ print(json_fomatted_str)
+
+
  
  print (" \n cookies")
  print (response.cookies)
@@ -69,8 +73,8 @@ def test_getSpecificDatafromResponse():
      print( " ID ======  ", dataId)
 
 def test_Add2Numbers():
-     assert_that(4).is_equal_to(add(1,5))
-     assert 5==add(1,3)
+     assert_that(6).is_equal_to(add(1,5))
+     assert 4==add(1,3)
 
 def add(a,b):
      return a+b

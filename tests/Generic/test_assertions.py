@@ -10,7 +10,7 @@ def test_assertionsAll():
 
     assert_that(response.status_code).is_equal_to(requests.codes.ok)
 
-   assert_that(responseJson).extracting('page').is_not_empty().contains("reqres")
+    assert_that(responseJson).extracting('page').is_not_empty().contains("reqres")
     #assert_that(response.status_code,description=" Status code is not for success ").is_equal_to(requests.codes.no_content)
 
 def test_softAssertions():
