@@ -1,0 +1,15 @@
+{
+    "python.testing.pytestArgs": [
+
+        "."
+
+    ],
+
+    "python.testing.unittestEnabled": false,
+
+    "python.testing.nosetestsEnabled": false,
+
+    "python.testing.pytestEnabled": true,
+    "python.pythonPath": "C:\\Users\\gakhuran\\.virtualenvs\\python_REST-E7gfUcoG\\Scripts\\python.exe",
+    
+}

@@ -3,6 +3,16 @@ from dataclasses import dataclass
 import requests
 
 
+# def get(address,               # URL for the request
+#         params=None,           # URL params dict
+#         headers=None,          # HTTP headers
+#         cookies=None,          # request cookies
+#         data=None,             # raw request data
+#         json=None,             # attach JSON object as request body
+#         encrypted_cert=None,   # certificate to use with request 
+#         allow_redirects=True,  # automatically follow HTTP redirects
+#         timeout=30)            # request timeout, by default it's 30 seconds
+
 
 @dataclass
 class Response:

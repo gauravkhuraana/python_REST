@@ -8,10 +8,13 @@ from assertpy import assert_that
 client = PeopleClient()
 
 def test_read_all_has_kent():
+    """
+    TEST on hitting People GET API, we get a user named Kent in the list
+    """
     response = client.read_all_persons()
     
     assert_that(response.status_code).is_equal_to(requests.codes.ok)
-
+    logger.info("User successfully read")
     assert_people_have_person_with_first_name(response,first_name='Kent')
 
 def test_new_person_can_be_added():
