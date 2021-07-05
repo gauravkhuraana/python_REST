@@ -1,9 +1,5 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-<<<<<<< HEAD
 *$py.class
 *.pyc
-=======
-*$py.class
->>>>>>> 7June

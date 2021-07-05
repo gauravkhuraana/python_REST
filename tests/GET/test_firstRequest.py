@@ -3,7 +3,7 @@ import json
 import jsonpath 
 import pytest
 from assertpy import assert_that
-
+import logging
 
 
 def test_GetAPI():
@@ -78,3 +78,12 @@ def test_Add2Numbers():
 
 def add(a,b):
      return a+b
+
+
+
+def validate_api(Base_URL,endpoint,request_headers):
+    global response
+    response = APIObj.GET(Base_URL + endpoint, request_headers=request_headers)
+    contentvalue = json.loads(response.text)
+    logging.getLogger().info(contentvalue)
+    assert response.ok
