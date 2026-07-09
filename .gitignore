@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 
 *.xlsx
+
+# -- Added by gitignore-improver (missing patterns) --
+*.log
